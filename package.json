@@ -1,0 +1,17 @@
+{
+  "name": "jquery.countdown.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renkaixin/jquery.countdown.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renkaixin/jquery.countdown.js/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
