@@ -1,2 +1,41 @@
 # jquery.countdown.js
-A simple and easy to use countdown jQuery plugin.
+
+Smallest and easiest countdown jQuery plugin.
+
+### Smallest
+
+``` html
+<!-- Production version only 672B -->
+<script src="jquery.countdown.min.js"></script>
+```
+
+### Easiest
+
+```html
+<p data-countdown="32500886400">
+There's only <i data-dd="1"></i> days and <i data-hh="1"></i> hours and <i data-mm="1"></i> minutes and <i data-ss="1"></i> seconds before 21 century end.
+</p>
+```
+
+### Advance
+
+```html
+<!-- use with callback -->
+<p data-countdown="32500886400" data-cb="foo">
+There's only <i data-dd="1"></i> days and <i data-hh="1"></i> hours and <i data-mm="1"></i> minutes and <i data-ss="1"></i> seconds before 21 century end.
+</p>
+
+<script>
+window.CountdownCallback = {
+    foo: {
+        step: function(data) {
+          	console.log('step on:');
+          	console.log(data);
+        },
+        finished: function() {
+            alert('finished');
+        }
+    }
+};
+</script>
+```
